@@ -8,7 +8,10 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/name"
@@ -16,8 +19,17 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="87dp"
+            android:layout_marginTop="53dp"
             android:hint="Enter Name" />
+
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="221dp" />
 
         <EditText
             android:id="@+id/emailAdd"
@@ -25,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="145dp"
             android:hint="example@email.com" />
 
         <EditText
@@ -34,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="218dp"
+            android:layout_marginBottom="202dp"
             android:hint="Enter password" />
 
         <EditText
@@ -43,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="137dp"
+            android:layout_marginBottom="112dp"
             android:hint="Confirm Password" />
 
         <Button
@@ -52,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="68dp"
+            android:layout_marginBottom="33dp"
             android:text="Sign Up" />
 
     </RelativeLayout>

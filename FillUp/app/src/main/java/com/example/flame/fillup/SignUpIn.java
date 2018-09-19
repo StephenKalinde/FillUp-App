@@ -17,6 +17,8 @@ public class SignUpIn extends AppCompatActivity {
 
         //initialising all ui elements
         signUp= (Button) findViewById(R.id.signUpBtn);
+        loginBtn=(Button) findViewById(R.id.login);
+
 
 
         //onclick actions
@@ -24,6 +26,16 @@ public class SignUpIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SignUpIn.this,SignUp.class));
+            }
+        });
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /**checks credentials then logs in to app**/
+
+                startActivity(new Intent(SignUpIn.this,SignUp.class));
+
             }
         });
     }
